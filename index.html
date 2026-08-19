@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pit Lane Mobile Tyres | Mobile Tyre Fitting in Blackwood, Newport, Cardiff & Caerphilly</title>
+<meta name="description" content="Mobile tyre fitting that comes to you across Blackwood, Newport, Cardiff, Caerphilly, Cwmbran and surrounding areas. New tyres, replacements, puncture repairs and emergency call-outs at home, work or roadside. Call now for a quote.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.pitlanemobiletyres.co.uk/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Pit Lane Mobile Tyres | We Come To You">
+<meta property="og:description" content="Mobile tyre fitting across Blackwood, Newport, Cardiff, Caerphilly & Cwmbran. Call now for a quote.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness structured data for local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Pit Lane Mobile Tyres",
+  "description": "Mobile tyre fitting service covering Blackwood and surrounding areas within a 15-mile radius. New tyres, replacements, puncture repairs and emergency call-outs at home, work or roadside.",
+  "image": "https://www.pitlanemobiletyres.co.uk/logo.jpg",
+  "url": "https://www.pitlanemobiletyres.co.uk/",
+  "telephone": "+447955394341",
+  "priceRange": "££",
+  "areaServed": [
+    {"@type":"City","name":"Blackwood"},
+    {"@type":"City","name":"Newport"},
+    {"@type":"City","name":"Cardiff"},
+    {"@type":"City","name":"Caerphilly"},
+    {"@type":"City","name":"Cwmbran"},
+    {"@type":"City","name":"Pontypool"},
+    {"@type":"City","name":"Risca"},
+    {"@type":"City","name":"Ystrad Mynach"},
+    {"@type":"City","name":"Bargoed"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Blackwood",
+    "addressRegion": "Caerphilly",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "07:00",
+    "closes": "20:00"
+  }],
+  "serviceType": ["Mobile tyre fitting","Tyre replacement","Puncture repair","Emergency tyre call-out"]
+}
+</script>
+
+<style>
+:root{
+  /* palette pulled from the logo */
+  --red-deep:#4d0006;
+  --red:#8d0008;
+  --red-bright:#c1121a;
+  --amber:#ff6a00;
+  --flame:#ff9500;
+  --yellow:#ffc21c;
+  --ink:#140203;
+  --paper:#faf6f2;
+  --smoke:#e7ded8;
+  --steel:#2a1618;
+
+  --call:#1db954;
+  --call-dark:#128a3e;
+  --whatsapp:#25d366;
+  --whatsapp-dark:#1da851;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Barlow',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:76px; /* room for the sticky mobile call bar */
+}
+h1,h2,h3,.condensed{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;line-height:0.98;letter-spacing:0.01em}
+
+/* ---------- top utility bar ---------- */
+.util{
+  background:var(--ink);color:#fff;font-size:0.82rem;
+  display:flex;justify-content:center;gap:1.4rem;flex-wrap:wrap;
+  padding:0.5rem 1rem;text-align:center;
+}
+.util strong{color:var(--yellow);font-weight:700}
+
+/* ---------- header / hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 78% 18%, rgba(255,149,0,0.55) 0%, rgba(255,106,0,0) 55%),
+    linear-gradient(160deg, var(--red-deep) 0%, var(--red) 46%, #b0330a 78%, var(--amber) 130%);
+  color:#fff;text-align:center;
+  padding:1.4rem 1.2rem 3rem;
+}
+/* faint tyre-tread diagonal texture */
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(115deg, rgba(0,0,0,0.16) 0 10px, rgba(0,0,0,0) 10px 26px);
+  opacity:0.35;mix-blend-mode:multiply;pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;max-width:640px;margin:0 auto}
+.logo{
+  width:min(280px,66vw);height:auto;display:block;margin:0 auto 0.6rem;
+  filter:drop-shadow(0 10px 26px rgba(0,0,0,0.45));border-radius:14px;
+}
+.eyebrow{
+  display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  text-transform:uppercase;letter-spacing:0.18em;font-size:0.85rem;
+  color:var(--ink);background:var(--yellow);
+  padding:0.28rem 0.85rem;border-radius:3px;margin-bottom:0.9rem;
+}
+.hero h1{
+  font-size:clamp(2.5rem,10vw,4.4rem);font-weight:800;
+  text-shadow:0 3px 0 rgba(0,0,0,0.28);margin-bottom:0.5rem;
+}
+.hero h1 .hl{color:var(--yellow)}
+.hero .sub{
+  font-size:clamp(1.05rem,4.2vw,1.35rem);font-weight:500;
+  max-width:34ch;margin:0 auto 1.5rem;color:#ffe9d6;
+}
+
+/* ---------- primary CTAs ---------- */
+.cta-stack{display:flex;flex-direction:column;gap:0.75rem;max-width:400px;margin:0 auto}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:0.6rem;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;
+  letter-spacing:0.03em;text-decoration:none;border:none;cursor:pointer;
+  border-radius:12px;padding:1.15rem 1.2rem;font-size:1.55rem;line-height:1;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn:active{transform:translateY(2px)}
+.btn svg{width:1.5em;height:1.5em;flex:none}
+.btn-call{
+  background:linear-gradient(180deg,#22c95e,var(--call));color:#fff;
+  box-shadow:0 6px 0 var(--call-dark),0 10px 20px rgba(0,0,0,0.3);
+}
+.btn-call small{display:block;font-size:0.62rem;font-weight:600;letter-spacing:0.14em;opacity:0.9;margin-bottom:2px}
+.btn-wa{
+  background:#fff;color:#075e54;
+  box-shadow:0 6px 0 #cdbfae,0 10px 20px rgba(0,0,0,0.25);
+}
+.btn-wa .wa-i{color:var(--whatsapp)}
+.hero-note{margin-top:1rem;font-size:0.9rem;color:#ffd9c2}
+
+/* ---------- trust strip ---------- */
+.trust{
+  background:var(--ink);color:#fff;padding:1.1rem 1rem;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.8rem;text-align:center;
+}
+.trust div{display:flex;align-items:center;gap:0.5rem;font-weight:600;font-size:0.95rem}
+.trust .tick{color:var(--yellow);font-weight:800;font-size:1.15rem}
+
+/* ---------- generic section ---------- */
+section{padding:3rem 1.2rem}
+.wrap{max-width:940px;margin:0 auto}
+.sec-label{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:0.16em;
+  text-transform:uppercase;font-size:0.85rem;color:var(--red-bright);margin-bottom:0.4rem;
+}
+h2{font-size:clamp(1.9rem,7vw,2.9rem);font-weight:800;margin-bottom:1.4rem;color:var(--ink)}
+h2 .hl{color:var(--red-bright)}
+.lead{font-size:1.1rem;max-width:60ch;margin-bottom:1.2rem}
+
+/* ---------- services grid ---------- */
+.services{background:var(--smoke)}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.4rem}
+@media(min-width:620px){.grid{grid-template-columns:1fr 1fr}}
+.card{
+  background:#fff;border-radius:14px;padding:1.4rem;
+  border-left:5px solid var(--red-bright);
+  box-shadow:0 4px 14px rgba(20,2,3,0.06);
+}
+.card h3{font-size:1.5rem;color:var(--ink);margin-bottom:0.4rem}
+.card p{font-size:0.98rem;color:#4a3a3a}
+.card .ic{font-size:1.7rem;margin-bottom:0.5rem;display:block}
+
+/* ---------- coverage ---------- */
+.coverage{background:linear-gradient(160deg,var(--red-deep),var(--red));color:#fff}
+.coverage h2{color:#fff}
+.coverage h2 .hl{color:var(--yellow)}
+.towns{display:flex;flex-wrap:wrap;gap:0.55rem;margin-top:1.2rem}
+.town{
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.22);
+  border-radius:30px;padding:0.4rem 0.95rem;font-weight:600;font-size:0.95rem;
+}
+.coverage .fine{margin-top:1.2rem;font-size:0.92rem;color:#ffd9c2}
+
+/* ---------- how it works ---------- */
+.steps{counter-reset:step;display:grid;gap:1rem;margin-top:1.4rem}
+@media(min-width:620px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;background:#fff;border-radius:14px;padding:1.6rem 1.3rem 1.3rem;box-shadow:0 4px 14px rgba(20,2,3,0.06)}
+.step::before{
+  counter-increment:step;content:counter(step);
+  position:absolute;top:-18px;left:1.3rem;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--red-bright);color:#fff;font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:1.5rem;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 10px rgba(193,18,26,0.4);
+}
+.step h3{font-size:1.35rem;margin:0.6rem 0 0.3rem}
+.step p{font-size:0.97rem;color:#4a3a3a}
+
+/* ---------- FAQ ---------- */
+.faq details{
+  background:#fff;border-radius:12px;margin-bottom:0.7rem;
+  border:1px solid var(--smoke);overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;list-style:none;padding:1.05rem 1.2rem;font-weight:700;
+  font-size:1.08rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Barlow Condensed';font-size:1.7rem;color:var(--red-bright);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 1.2rem 1.15rem;color:#4a3a3a}
+
+/* ---------- final CTA ---------- */
+.final{background:var(--ink);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final h2 .hl{color:var(--yellow)}
+.final .cta-stack{margin-top:1.6rem}
+
+/* ---------- footer ---------- */
+footer{background:#0c0102;color:#b79a9a;text-align:center;padding:2rem 1.2rem;font-size:0.88rem}
+footer strong{color:#fff;font-family:'Barlow Condensed';font-size:1.3rem;letter-spacing:0.03em}
+footer a{color:var(--yellow);text-decoration:none}
+.footer-towns{margin:0.8rem 0;line-height:1.8}
+
+/* ---------- sticky mobile call bar ---------- */
+.callbar{
+  position:fixed;bottom:0;left:0;right:0;z-index:50;
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+  background:var(--ink);box-shadow:0 -4px 18px rgba(0,0,0,0.3);
+}
+.callbar a{
+  display:flex;align-items:center;justify-content:center;gap:0.5rem;
+  padding:1.1rem 0.5rem;text-decoration:none;font-family:'Barlow Condensed';
+  font-weight:800;text-transform:uppercase;font-size:1.25rem;letter-spacing:0.03em;color:#fff;
+}
+.callbar .cb-call{background:var(--call)}
+.callbar .cb-wa{background:var(--whatsapp)}
+.callbar svg{width:1.3em;height:1.3em}
+@media(min-width:900px){ body{padding-bottom:0} .callbar{display:none} }
+
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- =================== UTILITY BAR =================== -->
+<div class="util">
+  <span>⚡ <strong>Same-day call-outs</strong> where available</span>
+  <span>📍 We come to your home, work or roadside</span>
+</div>
+
+<!-- =================== HERO =================== -->
+<header class="hero">
+  <div class="hero-inner">
+    <img class="logo" src="logo.jpg" alt="Pit Lane Mobile Tyres logo">
+    <span class="eyebrow">Mobile Tyre Fitting · South Wales</span>
+    <h1>Flat Tyre? <span class="hl">We Come To You.</span></h1>
+    <p class="sub">New tyres, replacements and puncture repairs fitted at your home, workplace or the roadside. No garage visit needed.</p>
+
+    <div class="cta-stack">
+      <a class="btn btn-call" href="tel:PHONE_PLACEHOLDER" data-call>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+        <span><small>Tap to call now</small>Call Now</span>
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/PHONE_PLACEHOLDER?text=Hi%20Pit%20Lane%2C%20I%27d%20like%20to%20book%20a%20mobile%20tyre%20fitting." data-wa>
+        <svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.9-.6 3.1.5 1.5 1.5 2.8 2.9 3.7 1.9 1.2 3.3 1.3 4.4 1 .7-.2 1.4-.8 1.6-1.5.1-.4.1-.7.1-.8-.1-.1-.2-.2-.3-.2z"/></svg>
+        <span>WhatsApp Us</span>
+      </a>
+    </div>
+    <p class="hero-note">Prefer to talk it through? Call for a quick, no-obligation quote.</p>
+  </div>
+</header>
+
+<!-- =================== TRUST STRIP =================== -->
+<div class="trust">
+  <div><span class="tick">✓</span> Fully mobile, we bring the workshop</div>
+  <div><span class="tick">✓</span> All makes &amp; tyre sizes</div>
+  <div><span class="tick">✓</span> Old tyres taken away</div>
+  <div><span class="tick">✓</span> Fast, friendly local service</div>
+</div>
+
+<!-- =================== SERVICES =================== -->
+<section class="services">
+  <div class="wrap">
+    <p class="sec-label">What we do</p>
+    <h2>Tyre Services, <span class="hl">Wherever You Are</span></h2>
+    <p class="lead">From a single flat to a full set of four, Pit Lane Mobile Tyres brings the fitting service to your driveway, car park or the side of the road. One call and we're on our way.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="ic">🛞</span>
+        <h3>New Tyre Supply &amp; Fitting</h3>
+        <p>Budget, mid-range or premium tyres to suit your car and your wallet. Sourced, delivered and fitted on site with all makes and sizes covered.</p>
+      </div>
+      <div class="card">
+        <span class="ic">🔧</span>
+        <h3>Tyre Replacement</h3>
+        <p>Worn, damaged or illegal tread? We swap out and replace your tyres at home or work so you're back on the road, road-legal and safe.</p>
+      </div>
+      <div class="card">
+        <span class="ic">🩹</span>
+        <h3>Puncture Repairs</h3>
+        <p>Where a puncture can be safely repaired to standard, we'll do it on the spot. Quicker and cheaper than a full replacement.</p>
+      </div>
+      <div class="card">
+        <span class="ic">🚨</span>
+        <h3>Emergency Call-Outs</h3>
+        <p>Stuck with a flat at home or on the roadside? Get in touch and we'll get to you as fast as we can, same-day where available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== HOW IT WORKS =================== -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">Simple &amp; fast</p>
+    <h2>How It <span class="hl">Works</span></h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or Message</h3>
+        <p>Tap <strong>Call Now</strong> or WhatsApp us your car reg, tyre size and location. We'll confirm what you need and give you a quote.</p>
+      </div>
+      <div class="step">
+        <h3>We Come To You</h3>
+        <p>We arrive at your chosen spot, whether that's home, work or roadside, with the tyres and kit, at a time that suits you.</p>
+      </div>
+      <div class="step">
+        <h3>Fitted On The Spot</h3>
+        <p>We fit, balance and check everything over, take the old tyres away, and you're ready to drive. No garage, no waiting room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== COVERAGE / LOCAL SEO =================== -->
+<section class="coverage">
+  <div class="wrap">
+    <p class="sec-label" style="color:var(--yellow)">Where we cover</p>
+    <h2>Mobile Tyre Fitting Across <span class="hl">South Wales</span></h2>
+    <p class="lead">Based in Blackwood and covering roughly a 15-mile radius, including Newport, Cardiff, Cwmbran and the surrounding valleys and towns. Not sure if you're in our patch? Give us a call and ask.</p>
+    <div class="towns">
+      <span class="town">Blackwood</span>
+      <span class="town">Newport</span>
+      <span class="town">Cardiff</span>
+      <span class="town">Caerphilly</span>
+      <span class="town">Cwmbran</span>
+      <span class="town">Pontypool</span>
+      <span class="town">Risca</span>
+      <span class="town">Ystrad Mynach</span>
+      <span class="town">Bargoed</span>
+      <span class="town">Newbridge</span>
+      <span class="town">Pontllanfraith</span>
+      <span class="town">Bedwas</span>
+      <span class="town">Crosskeys</span>
+      <span class="town">Abercarn</span>
+    </div>
+    <p class="fine">Covering CF and NP postcodes within about 15 miles of Blackwood. Outside the area? Ask us anyway, we may still be able to help.</p>
+  </div>
+</section>
+
+<!-- =================== FAQ (SEO) =================== -->
+<section class="faq">
+  <div class="wrap">
+    <p class="sec-label">Good to know</p>
+    <h2>Frequently Asked <span class="hl">Questions</span></h2>
+
+    <details>
+      <summary>What is mobile tyre fitting?</summary>
+      <p>Instead of driving to a garage, we bring a fully equipped tyre-fitting service to you. We arrive at your home, workplace or the roadside, fit your tyres on the spot, and take the old ones away, so you don't lose half a day sitting in a waiting room.</p>
+    </details>
+    <details>
+      <summary>Which areas do you cover?</summary>
+      <p>We're based in Blackwood and cover roughly a 15-mile radius, including Newport, Cardiff, Cwmbran, Caerphilly, Pontypool, Risca and the surrounding towns and valleys. If you're not sure whether you're in our area, just call and ask.</p>
+    </details>
+    <details>
+      <summary>How much does it cost?</summary>
+      <p>Prices depend on your tyre size, the brand you choose and the work needed. We keep it straightforward. Give us a call or message us your car reg and tyre size and we'll give you an honest quote before any work starts.</p>
+    </details>
+    <details>
+      <summary>Can you come out in an emergency?</summary>
+      <p>Yes. We take emergency and roadside call-outs and aim to get to you as quickly as we can, with same-day service where available. Call us and we'll let you know the soonest we can be there.</p>
+    </details>
+    <details>
+      <summary>Do you dispose of my old tyres?</summary>
+      <p>Yes. We take your old tyres away and dispose of them responsibly as part of the service, so you don't have to worry about it.</p>
+    </details>
+    <details>
+      <summary>How do I book?</summary>
+      <p>Tap Call Now to speak to us directly, or message us on WhatsApp with your location, car registration and tyre size. We'll confirm the details, give you a quote and arrange a time that suits you.</p>
+    </details>
+  </div>
+</section>
+
+<!-- =================== FINAL CTA =================== -->
+<section class="final">
+  <div class="wrap">
+    <p class="sec-label" style="color:var(--yellow)">Ready when you are</p>
+    <h2>Back On The Road, <span class="hl">Fast.</span></h2>
+    <p class="lead" style="margin:0 auto;">One call and we'll come to you. Tap below for a quote or to book your fitting.</p>
+    <div class="cta-stack">
+      <a class="btn btn-call" href="tel:PHONE_PLACEHOLDER" data-call>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+        <span><small>Tap to call now</small>Call Now</span>
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/PHONE_PLACEHOLDER?text=Hi%20Pit%20Lane%2C%20I%27d%20like%20to%20book%20a%20mobile%20tyre%20fitting." data-wa>
+        <svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.9-.6 3.1.5 1.5 1.5 2.8 2.9 3.7 1.9 1.2 3.3 1.3 4.4 1 .7-.2 1.4-.8 1.6-1.5.1-.4.1-.7.1-.8-.1-.1-.2-.2-.3-.2z"/></svg>
+        <span>WhatsApp Us</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <strong>PIT LANE MOBILE TYRES</strong>
+  <p class="footer-towns">Mobile tyre fitting in Blackwood · Newport · Cardiff · Caerphilly · Cwmbran · Pontypool · Risca · and surrounding areas</p>
+  <p>Call us: <a href="tel:PHONE_PLACEHOLDER" data-call>[ Your number here ]</a></p>
+  <p style="margin-top:0.8rem;opacity:0.7">© <span id="yr"></span> Pit Lane Mobile Tyres. All rights reserved.</p>
+</footer>
+
+<!-- =================== STICKY MOBILE CALL BAR =================== -->
+<nav class="callbar" aria-label="Contact">
+  <a class="cb-call" href="tel:PHONE_PLACEHOLDER" data-call>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+    Call Now
+  </a>
+  <a class="cb-wa" href="https://wa.me/PHONE_PLACEHOLDER?text=Hi%20Pit%20Lane%2C%20I%27d%20like%20to%20book%20a%20mobile%20tyre%20fitting." data-wa>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.9-.6 3.1.5 1.5 1.5 2.8 2.9 3.7 1.9 1.2 3.3 1.3 4.4 1 .7-.2 1.4-.8 1.6-1.5.1-.4.1-.7.1-.8-.1-.1-.2-.2-.3-.2z"/></svg>
+    WhatsApp
+  </a>
+</nav>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* =========================================================
+     SET YOUR NUMBER HERE — ONE PLACE, UPDATES EVERYTHING
+     - phoneDial : what the Call button dials (keep the +44 format)
+     - phoneWA   : WhatsApp number, digits only, no + and no leading 0
+     Example for 07123 456789:
+        phoneDial = "+447123456789"
+        phoneWA   = "447123456789"
+     ========================================================= */
+  const phoneDial = "+447955394341";
+  const phoneWA   = "447955394341";
+  const phoneShow = "07955 394341";
+
+  document.querySelectorAll('[data-call]').forEach(a=>{
+    a.setAttribute('href','tel:'+phoneDial);
+    if(a.closest('footer')) a.textContent = phoneShow;
+  });
+  document.querySelectorAll('[data-wa]').forEach(a=>{
+    const msg = encodeURIComponent("Hi Pit Lane, I'd like to book a mobile tyre fitting.");
+    a.setAttribute('href','https://wa.me/'+phoneWA+'?text='+msg);
+  });
+</script>
+</body>
+</html>
