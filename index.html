@@ -83,16 +83,15 @@ body{
 h1,h2,h3,.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;line-height:0.98}
 .wrap{max-width:1120px;margin:0 auto;padding:0 1.3rem}
 
-/* ---------- utility bar (address + phone) ---------- */
+/* ---------- utility bar (address) ---------- */
+.util-wrap{background:var(--ink);}
 .util{
-  background:var(--ink);color:#fff;font-size:0.86rem;
+  color:#fff;font-size:0.86rem;
   display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;
   padding:0.55rem 1.3rem;max-width:1120px;margin:0 auto;
 }
 .util .u-left,.util .u-right{display:flex;align-items:center;gap:0.5rem}
 .util svg{width:15px;height:15px;color:var(--yellow);flex:none}
-.util a{color:#fff;text-decoration:none;font-weight:600}
-.util .u-right strong{color:var(--yellow);font-family:'Barlow Condensed';font-size:1.15rem;letter-spacing:0.02em;margin-left:0.15rem}
 
 /* ---------- nav header ---------- */
 .nav{background:var(--red);border-bottom:4px solid var(--yellow)}
@@ -234,10 +233,12 @@ footer a{color:var(--yellow);text-decoration:none}
 <body>
 
 <!-- =================== UTILITY BAR =================== -->
-<div class="util">
-  <div class="u-left">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-    Blackwood &amp; 15 miles &middot; South Wales
+<div class="util-wrap">
+  <div class="util">
+    <div class="u-left">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      Blackwood &amp; 15 miles &middot; South Wales
+    </div>
   </div>
 </div>
 
